@@ -49,11 +49,12 @@ const getMpList = async () => {
 
 //getMpList()
 
-exports.mpDetails = (req, res) => {
+exports.mpDetails = async (req, res) => {
     const query = req.query || req.body;
 
     if (query.data && query.data === 'mp_list') {
-        res.status(200).send('testing');
+        const mpList = await getMpList();
+        res.status(200).send(mpList);
     }
 
     //let message = req.query.message || req.body.message || 'Hello World!';
