@@ -4,7 +4,8 @@
   "description": "Fetches and returns details of the members of the Finnish parliament.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "gcloud-deploy": "gcloud functions deploy mp-detail-api --region=europe-west3 --runtime nodejs10 --trigger-http --allow-unauthenticated --entry-point=mpDetails"
   },
   "author": "Taneli Salonen",
   "license": "ISC",
