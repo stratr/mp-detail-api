@@ -10,8 +10,10 @@
   "author": "Taneli Salonen",
   "license": "ISC",
   "dependencies": {
+    "@google-cloud/bigquery": "^5.5.0",
     "axios": "^0.21.1",
     "cheerio": "^1.0.0-rc.5",
-    "dotenv": "^8.2.0"
+    "dotenv": "^8.2.0",
+    "twitter": "^1.7.1"
   }
 }
